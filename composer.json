@@ -7,13 +7,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "TherenceManzo\\SlowQueryLogger\\": "src/"
+            "SlowQueryLogger": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "TherenceManzo\\SlowQueryLogger\\SlowQueryLoggerServiceProvider"
+                "SlowQueryLogger\\SlowQueryLoggerServiceProvider"
             ]
         }
     },
