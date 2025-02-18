@@ -1,0 +1,28 @@
+{
+    "name": "therencemanzo/slowquerylogger",
+    "description": "This librabry will logged all slow queries based on the threshold",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TherenceManzo\\SlowQueryLogger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TherenceManzo\\SlowQueryLogger\\SlowQueryLoggerServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Therence Manzo",
+            "email": "therencenielmanzo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1"
+    }
+}
