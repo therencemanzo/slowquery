@@ -6,9 +6,8 @@ A Laravel 11 package for logging slow queries and optimizing database performanc
 
 - **Log Slow Queries**: Logs slow database queries to the database.
 - **Paginated Log Viewer**: View slow queries with pagination.
-- **Configurable**: Allows configuration of slow query thresholds and other settings.
+- **Configurable**: Allows configuration of slow query thresholds and route name.
 - **Migration Publishing**: Publishes migration files for easy integration with your application.
-- **Customizable Views**: Tailwind CSS-based views for the query log display.
 
 ## Installation
 
@@ -31,12 +30,18 @@ php artisan vendor:publish --provider="TherenceManzo\SlowQueryLogger\SlowQueryLo
 php artisan vendor:publish --provider="TherenceManzo\SlowQueryLogger\SlowQueryLoggerServiceProvider" --tag=migrations
 ```
 
-### 3. **Run the migration**
+### 4. **Run the migration**
 
 ```sh
 php artisan migrate
 ```
+### 5. **Configure your .env**
 
-### 4. **Test**
+```sh
+APP_DEBUG=true
+```
+For security it will disable the routing and viewing if set debug set to false but it will still log and save the slow queries in the background.
+
+## Test 
 
 Go to web browser and <APP_URL>/slow-queries you can configure the route and threshold in the config(slowquerlogger) file
