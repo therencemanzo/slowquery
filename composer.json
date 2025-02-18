@@ -7,7 +7,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SlowQueryLogger": "src/"
+            "TherenceManzo\\SlowQueryLogger\\": "src/"
         }
     },
     "extra": {
