@@ -1,4 +1,4 @@
-# Laravel Query Optimizer
+# Laravel Slow Query Logger
 
 A Laravel 11 package for logging slow queries and optimizing database performance.
 
