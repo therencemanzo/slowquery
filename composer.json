@@ -1,6 +1,8 @@
 {
     "name": "therencemanzo/slowquerylogger",
     "description": "This librabry will logged all slow queries based on the threshold",
+    "keywords": ["laravel", "slow query", "slow query logger"],
+    "homepage": "https://github.com/therencemanzo/slowquery",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -22,6 +24,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=8.1"
     }
