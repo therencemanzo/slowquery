@@ -16,7 +16,7 @@ A Laravel 11 package for logging slow queries and optimizing database performanc
 Run the following Composer command to install the package:
 
 ```sh
-composer require yourusername/query-optimizer
+composer require therencemanzo/slowquerylogger
 ```
 
 ### 2. **Publish the config**
